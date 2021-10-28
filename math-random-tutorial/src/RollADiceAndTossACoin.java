@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class RollADice {
+public class RollADiceAndTossACoin {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
