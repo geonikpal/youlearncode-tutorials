@@ -1,20 +1,28 @@
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class HashMapAccess {
 
     public static void main(String[] args) {
+
         System.out.println("get()");
         get();
         System.out.println();
+
         System.out.println("getOrDefault()");
         getOrDefault();
         System.out.println();
+
         System.out.println("keySet()");
         keySet();
+        System.out.println();
+
         System.out.println("entrySet()");
         entrySet();
+        System.out.println();
+
+        System.out.println("values()");
+        values();
         System.out.println();
 
     }
@@ -116,6 +124,34 @@ public class HashMapAccess {
                 .forEach(System.out::println);
 
         System.out.println();
+
+    }
+
+    public static void values(){
+        /* values()
+         * returns all the values as a collection
+         */
+        HashMap<Integer, String> namesMap = new HashMap<>();
+
+        namesMap.put(1, "Sofoklis");
+        namesMap.put(2, "Platonas");
+        namesMap.put(3, "Aristotelis");
+        namesMap.put(4, "Georgios");
+
+        // Getting all the values as a Collection
+        Collection<String> values = namesMap.values();
+
+        //print all the values
+        System.out.println("Values: ");
+        values.forEach(System.out::println);
+        System.out.println();
+
+        // Note that if we put/remove an entry, the values collection will also be updated
+        namesMap.remove(4);
+
+        // values collection after removal of key 4
+        System.out.println("Values after removal of key 4: ");
+        values.forEach(System.out::println);
 
     }
 }

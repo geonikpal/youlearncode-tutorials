@@ -3,12 +3,14 @@ import java.util.HashMap;
 public class HashMapPut {
 
     public static void main(String[] args) {
+
         System.out.println("put()");
         put();
         System.out.println("putAll()");
         putAll();
         System.out.println("putIfAbsent()");
         putIfAbsent();
+
     }
 
     public static void put(){
