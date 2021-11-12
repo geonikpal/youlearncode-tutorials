@@ -31,6 +31,7 @@ public class CountWords {
         //remove any space that might exist
         words = words.stream()
                 .map(word -> word.replace(" ",""))
+                .filter(word -> !word.equals(""))
                 .collect(Collectors.toList());
 
         //The map that we'll use
