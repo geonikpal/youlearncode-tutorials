@@ -3,7 +3,7 @@ public class SubstringEx2 {
     {
         int beginning=12;
         int ending=23;
-        String Str = new String("CodeLearnHub substring Tutorial");
+        String str ="CodeLearnHub substring Tutorial";
 
 
         System.out.print("The substring  is : ");
