@@ -20,7 +20,6 @@ public class IterateAMap {
 
         countries.forEach((key, value) -> {
             //actions
-            countries.replace("USA", "NA");
         });
 
         //Another way to iterate a map using forEach, is through entrySet() method
