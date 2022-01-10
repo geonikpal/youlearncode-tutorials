@@ -3,7 +3,6 @@ public class BitwiseOperators {
 
     public static void main(String[] args) {
 
-
     and();
     or();
     xor();
@@ -61,12 +60,10 @@ public class BitwiseOperators {
     private static void xor(){
 
         //booleans
-        int a = 100;
-        System.out.println("true | false: "+(true | --a == 99));
-        System.out.println("Now a is decreased by 1, a is:"+a);
-        //whereas with logical OR
-        System.out.println("true | false: "+(true || --a == 99));
-        System.out.println("Now a doesn't change, a is:"+a);
+        System.out.println("true ^ false: "+(true ^ false));
+        System.out.println("false ^ true: "+(false ^ true));
+        System.out.println("false ^ false: "+(false ^ false));
+        System.out.println("true ^ true: "+(true ^ true));
 
         //integers
         //1100100 in binary
