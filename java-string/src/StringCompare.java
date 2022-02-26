@@ -21,12 +21,28 @@ public class StringCompare {
         String clhMisspelled = "Code Learn Hab";
         String clh = "Code Learn Hub";
         String clhUpperCase = clh.toUpperCase();
+        String clhMixedCase = "CodE LeaRn HUb";
+        int codePointAtClh = clh.codePointAt(clh.length()-2);
+        int codePointAtClhMisspelled = clhMisspelled.codePointAt(clh.length()-2);
 
-        System.out.println("Score of clhMisspelled "+ clhMisspelled.codePoints().sum());
-        System.out.println("Score of clh "+ clh.codePoints().sum());
-        System.out.println("Score of clhUpperCase "+ clhUpperCase.codePoints().sum());
+        System.out.println("Codepoint value of \"Code Learn Hub\" first different character: "
+                + codePointAtClh);
+        System.out.println("Codepoint value of \"Code Learn Hab\" first different character: "
+                + codePointAtClhMisspelled);
+        System.out.println("Difference between them: "
+                + String.valueOf(codePointAtClh-codePointAtClhMisspelled));
+        System.out.println("\"Code Learn Hab\".compareTo(\"Code Learn Hab\") will return: "
+                + clh.compareTo(clhMisspelled));
+
         System.out.println();
-        System.out.println("compareTo clh and clhUpperCase "+clh.compareTo(clhMisspelled));
-        System.out.println("compareToIgnoreCase clh and clhUpperCase "+clh.compareToIgnoreCase(clhUpperCase));
+
+        System.out.println("\"Code Learn Hub\".compareTo(\"CODE LEARN HUB\") will return: "
+                + clh.compareTo(clhUpperCase));
+        System.out.println("\"Code Learn Hub\".compareToIgnoreCase(\"CODE LEARN HUB\") will return: "
+                + clh.compareToIgnoreCase(clhUpperCase));
+        System.out.println("\"Code Learn Hub\".compareToIgnoreCase(\"CodE LeaRn HUb\") will return: "
+                + clh.compareToIgnoreCase(clhMixedCase));
+
     }
+
 }
