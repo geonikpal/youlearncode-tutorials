@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "model": "Astra",
+    "brand": "Opel",
+    "horses": 100,
+    "price": 18000.0
+  },
+  {
+    "id": 2,
+    "model": "Insignia",
+    "brand": "Opel",
+    "horses": 120,
+    "price": 22000.0
+  },
+  {
+    "id": 3,
+    "model": "Golf",
+    "brand": "VW",
+    "horses": 90,
+    "price": 17000.0
+  }
+]
