@@ -1,0 +1,31 @@
+app:
+  test: will it crash?
+  c: "H"
+  i: 5
+  d: 5.7
+  str: "Hello World"
+  person:
+    name: Georgios
+    surname: Palaiologopoulos
+  array:
+    - hello
+    - big
+    - world
+  person-list:
+    - name: Georgios
+      surname: Palaiologopoulos
+    - name: Dimitrios
+      surname: Tasios
+    - name: Ioannis
+      surname: Makris
+  person-map:
+    '[first person]':
+      name: Akis
+      surname: Pal
+    '[second person]':
+      name: Ioannis
+      surname: Makris
+
+api:
+  numberOfThreads: 5
+  timeout: 10
