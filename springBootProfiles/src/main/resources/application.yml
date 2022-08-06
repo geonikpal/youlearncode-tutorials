@@ -1,0 +1,16 @@
+#spring:
+#  profiles:
+#    active: dev
+
+#logging:
+#  level.org.springframework.core: INFO
+#
+#---
+#spring:
+#  config:
+#    activate:
+#      on-profile: dev
+#logging:
+#  level.org.springframework.core: TRACE
+
+
