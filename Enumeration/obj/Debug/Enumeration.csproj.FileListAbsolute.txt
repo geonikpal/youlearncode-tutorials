@@ -1,0 +1,11 @@
+C:\Users\mauri\VS-2022\Enumeration\Enumeration\obj\Debug\Enumeration.csproj.AssemblyReference.cache
+C:\Users\mauri\VS-2022\Enumeration\Enumeration\obj\Debug\Enumeration.csproj.SuggestedBindingRedirects.cache
+C:\Users\mauri\VS-2022\Enumeration\Enumeration\obj\Debug\Enumeration.csproj.CoreCompileInputs.cache
+C:\Users\mauri\VS-2022\Enumeration\Enumeration\bin\Debug\Enumeration.exe.config
+C:\Users\mauri\VS-2022\Enumeration\Enumeration\bin\Debug\Enumeration.exe
+C:\Users\mauri\VS-2022\Enumeration\Enumeration\bin\Debug\Enumeration.pdb
+C:\Users\mauri\VS-2022\Enumeration\Enumeration\obj\Debug\Enumeration.exe
+C:\Users\mauri\VS-2022\Enumeration\Enumeration\obj\Debug\Enumeration.pdb
+C:\Users\mauri\VS-2022\Enumeration\Enumeration\bin\Debug\Ardalis.SmartEnum.dll
+C:\Users\mauri\VS-2022\Enumeration\Enumeration\bin\Debug\Ardalis.SmartEnum.xml
+C:\Users\mauri\VS-2022\Enumeration\Enumeration\obj\Debug\Enumeration.csproj.CopyComplete

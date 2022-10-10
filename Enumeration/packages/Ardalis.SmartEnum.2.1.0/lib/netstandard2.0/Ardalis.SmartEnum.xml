@@ -1,0 +1,572 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Ardalis.SmartEnum</name>
+    </assembly>
+    <members>
+        <member name="M:Ardalis.SmartEnum.Core.SmartEnumThen`2.Then(System.Action)">
+            <summary>
+            Calls <paramref name="doThis"/> Action when the preceding When call matches.
+            </summary>
+            <param name="doThis">Action method to call.</param>
+            <returns>A chainable instance of CaseWhen for more when calls.</returns>
+        </member>
+        <member name="M:Ardalis.SmartEnum.Core.SmartEnumWhen`2.Default(System.Action)">
+            <summary>
+            Execute this action if no other calls to When have matched.
+            </summary>
+            <param name="action">The Action to call.</param>
+        </member>
+        <member name="M:Ardalis.SmartEnum.Core.SmartEnumWhen`2.When(Ardalis.SmartEnum.ISmartEnum)">
+            <summary>
+            When this instance is one of the specified <see cref="T:Ardalis.SmartEnum.SmartEnum`2"/> parameters.
+            Execute the action in the subsequent call to Then().
+            </summary>
+            <param name="smartEnumWhen">A collection of <see cref="T:Ardalis.SmartEnum.SmartEnum`2"/> values to compare to this instance.</param>
+            <returns>A executor object to execute a supplied action.</returns>
+        </member>
+        <member name="M:Ardalis.SmartEnum.Core.SmartEnumWhen`2.When(Ardalis.SmartEnum.ISmartEnum[])">
+            <summary>
+            When this instance is one of the specified <see cref="T:Ardalis.SmartEnum.SmartEnum`2"/> parameters.
+            Execute the action in the subsequent call to Then().
+            </summary>
+            <param name="smartEnums">A collection of <see cref="T:Ardalis.SmartEnum.SmartEnum`2"/> values to compare to this instance.</param>
+            <returns>A executor object to execute a supplied action.</returns>
+        </member>
+        <member name="M:Ardalis.SmartEnum.Core.SmartEnumWhen`2.When(System.Collections.Generic.IEnumerable{Ardalis.SmartEnum.ISmartEnum})">
+            <summary>
+            When this instance is one of the specified <see cref="T:Ardalis.SmartEnum.SmartEnum`2"/> parameters.
+            Execute the action in the subsequent call to Then().
+            </summary>
+            <param name="smartEnums">A collection of <see cref="T:Ardalis.SmartEnum.SmartEnum`2"/> values to compare to this instance.</param>
+            <returns>A executor object to execute a supplied action.</returns>
+        </member>
+        <member name="M:Ardalis.SmartEnum.Exceptions.InvalidFlagEnumValueParseException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ardalis.SmartEnum.Exceptions.InvalidFlagEnumValueParseException"/> class.
+            </summary>
+        </member>
+        <member name="M:Ardalis.SmartEnum.Exceptions.InvalidFlagEnumValueParseException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ardalis.SmartEnum.Exceptions.InvalidFlagEnumValueParseException"/> class with serialized data.
+            </summary>
+            <param name="info">The object that holds the serialized object data.</param>
+            <param name="context">The contextual information about the source or destination.</param>
+        </member>
+        <member name="M:Ardalis.SmartEnum.Exceptions.InvalidFlagEnumValueParseException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ardalis.SmartEnum.Exceptions.InvalidFlagEnumValueParseException"/> class with a user specified error <paramref name="message"/>. 
+            </summary>
+            <param name="message">The error message that explains the reason for the exception.</param>
+        </member>
+        <member name="M:Ardalis.SmartEnum.Exceptions.InvalidFlagEnumValueParseException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ardalis.SmartEnum.Exceptions.InvalidFlagEnumValueParseException"/> class with a user specified error <paramref name="message"/>
+            and a wrapped <paramref name="innerException"/> that is the cause of this exception.
+            </summary>
+            <param name="message">The error message that explains the reason for the exception.</param>
+            <param name="innerException"></param> The exception that is the cause of the current exception. If the <paramref name="innerException"/> parameter is not a null reference, 
+            the current exception is raised in a <c>catch</c> block that handles the inner exception.
+        </member>
+        <member name="T:Ardalis.SmartEnum.Exceptions.NegativeValueArgumentException">
+            <summary>
+            The exception that is thrown when a negative value is provided as an argument value.
+            </summary>
+        </member>
+        <member name="M:Ardalis.SmartEnum.Exceptions.NegativeValueArgumentException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ardalis.SmartEnum.Exceptions.NegativeValueArgumentException"/> class.
+            </summary>
+        </member>
+        <member name="M:Ardalis.SmartEnum.Exceptions.NegativeValueArgumentException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ardalis.SmartEnum.Exceptions.NegativeValueArgumentException"/> class with serialized data.
+            </summary>
+            <param name="info">The object that holds the serialized object data.</param>
+            <param name="context">The contextual information about the source or destination.</param>
+        </member>
+        <member name="M:Ardalis.SmartEnum.Exceptions.NegativeValueArgumentException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ardalis.SmartEnum.Exceptions.NegativeValueArgumentException"/> class with a specified error message.
+            </summary>
+            <param name="message">The error message that explains the reason for the exception.</param>
+        </member>
+        <member name="M:Ardalis.SmartEnum.Exceptions.NegativeValueArgumentException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ardalis.SmartEnum.Exceptions.NegativeValueArgumentException"/> class with a specified error message and 
+            a reference to the inner exception that is the cause of this exception.
+            </summary>
+            <param name="message">The error message that explains the reason for the exception.</param>
+            <param name="innerException">
+            The exception that is the cause of the current exception. If the <paramref name="innerException"/> parameter is not a null reference, 
+            the current exception is raised in a <c>catch</c> block that handles the inner exception.
+            </param>
+        </member>
+        <member name="M:Ardalis.SmartEnum.Exceptions.SmartFlagEnumContainsNegativeValueException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ardalis.SmartEnum.Exceptions.SmartFlagEnumContainsNegativeValueException"/> class.
+            </summary>
+        </member>
+        <member name="M:Ardalis.SmartEnum.Exceptions.SmartFlagEnumContainsNegativeValueException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ardalis.SmartEnum.Exceptions.SmartFlagEnumContainsNegativeValueException"/> class with serialized data.
+            </summary>
+            <param name="info">The object that holds the serialized object data.</param>
+            <param name="context">The contextual information about the source or destination.</param>
+        </member>
+        <member name="M:Ardalis.SmartEnum.Exceptions.SmartFlagEnumContainsNegativeValueException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ardalis.SmartEnum.Exceptions.SmartFlagEnumContainsNegativeValueException"/> class with a user specified error <paramref name="message"/>. 
+            </summary>
+            <param name="message">The error message that explains the reason for the exception.</param>
+        </member>
+        <member name="M:Ardalis.SmartEnum.Exceptions.SmartFlagEnumContainsNegativeValueException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ardalis.SmartEnum.Exceptions.SmartFlagEnumContainsNegativeValueException"/> class with a user specified error <paramref name="message"/>
+            and a wrapped <paramref name="innerException"/> that is the cause of this exception.
+            </summary>
+            <param name="message">The error message that explains the reason for the exception.</param>
+            <param name="innerException"></param> The exception that is the cause of the current exception. If the <paramref name="innerException"/> parameter is not a null reference, 
+            the current exception is raised in a <c>catch</c> block that handles the inner exception.
+        </member>
+        <member name="T:Ardalis.SmartEnum.Exceptions.SmartFlagEnumDoesNotContainPowerOfTwoValuesException">
+            <summary>
+            The exception that is thrown when a <see cref="T:Ardalis.SmartEnum.SmartFlagEnum`1"/> does not contain consecutive power of two values.
+            </summary>
+        </member>
+        <member name="M:Ardalis.SmartEnum.Exceptions.SmartFlagEnumDoesNotContainPowerOfTwoValuesException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ardalis.SmartEnum.Exceptions.SmartFlagEnumDoesNotContainPowerOfTwoValuesException"/> class.
+            </summary>
+        </member>
+        <member name="M:Ardalis.SmartEnum.Exceptions.SmartFlagEnumDoesNotContainPowerOfTwoValuesException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ardalis.SmartEnum.Exceptions.SmartFlagEnumDoesNotContainPowerOfTwoValuesException"/> class with serialized data.
+            </summary>
+            <param name="info">The object that holds the serialized object data.</param>
+            <param name="context">The contextual information about the source or destination.</param>
+        </member>
+        <member name="M:Ardalis.SmartEnum.Exceptions.SmartFlagEnumDoesNotContainPowerOfTwoValuesException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ardalis.SmartEnum.Exceptions.SmartFlagEnumDoesNotContainPowerOfTwoValuesException"/> class with a specified error message.
+            </summary>
+            <param name="message">The error message that explains the reason for the exception.</param>
+        </member>
+        <member name="M:Ardalis.SmartEnum.Exceptions.SmartFlagEnumDoesNotContainPowerOfTwoValuesException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ardalis.SmartEnum.Exceptions.SmartFlagEnumDoesNotContainPowerOfTwoValuesException"/> class with a specified error message and 
+            a reference to the inner exception that is the cause of this exception.
+            </summary>
+            <param name="message">The error message that explains the reason for the exception.</param>
+            <param name="innerException">
+            The exception that is the cause of the current exception. If the <paramref name="innerException"/> parameter is not a null reference, 
+            the current exception is raised in a <c>catch</c> block that handles the inner exception.
+            </param>
+        </member>
+        <member name="T:Ardalis.SmartEnum.SmartEnumNotFoundException">
+            <summary>
+            The exception that is thrown when a item is not found.
+            </summary>
+        </member>
+        <member name="M:Ardalis.SmartEnum.SmartEnumNotFoundException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ardalis.SmartEnum.SmartEnumNotFoundException"/> class.
+            </summary>
+        </member>
+        <member name="M:Ardalis.SmartEnum.SmartEnumNotFoundException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ardalis.SmartEnum.SmartEnumNotFoundException"/> class with serialized data.
+            </summary>
+            <param name="info">The object that holds the serialized object data.</param>
+            <param name="context">The contextual information about the source or destination.</param>
+        </member>
+        <member name="M:Ardalis.SmartEnum.SmartEnumNotFoundException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ardalis.SmartEnum.SmartEnumNotFoundException"/> class with a specified error message.
+            </summary>
+            <param name="message">The error message that explains the reason for the exception.</param>
+        </member>
+        <member name="M:Ardalis.SmartEnum.SmartEnumNotFoundException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Ardalis.SmartEnum.SmartEnumNotFoundException"/> class with a specified error message and 
+            a reference to the inner exception that is the cause of this exception.
+            </summary>
+            <param name="message">The error message that explains the reason for the exception.</param>
+            <param name="innerException">
+            The exception that is the cause of the current exception. If the <paramref name="innerException"/> parameter is not a null reference, 
+            the current exception is raised in a <c>catch</c> block that handles the inner exception.
+            </param>
+        </member>
+        <member name="T:Ardalis.SmartEnum.SmartEnum`1">
+            <summary>
+            A base type to use for creating smart enums with inner value of type <see cref="T:System.Int32"/>.
+            </summary>
+            <typeparam name="TEnum">The type that is inheriting from this class.</typeparam>
+            <remarks></remarks>
+        </member>
+        <member name="T:Ardalis.SmartEnum.SmartEnum`2">
+            <summary>
+            A base type to use for creating smart enums.
+            </summary>
+            <typeparam name="TEnum">The type that is inheriting from this class.</typeparam>
+            <typeparam name="TValue">The type of the inner value.</typeparam>
+            <remarks></remarks>
+        </member>
+        <member name="P:Ardalis.SmartEnum.SmartEnum`2.List">
+            <summary>
+            Gets a collection containing all the instances of <see cref="T:Ardalis.SmartEnum.SmartEnum`2"/>.
+            </summary>
+            <value>A <see cref="T:System.Collections.Generic.IReadOnlyCollection`1"/> containing all the instances of <see cref="T:Ardalis.SmartEnum.SmartEnum`2"/>.</value>
+            <remarks>Retrieves all the instances of <see cref="T:Ardalis.SmartEnum.SmartEnum`2"/> referenced by public static read-only fields in the current class or its bases.</remarks>
+        </member>
+        <member name="P:Ardalis.SmartEnum.SmartEnum`2.Name">
+            <summary>
+            Gets the name.
+            </summary>
+            <value>A <see cref="T:System.String"/> that is the name of the <see cref="T:Ardalis.SmartEnum.SmartEnum`2"/>.</value>
+        </member>
+        <member name="P:Ardalis.SmartEnum.SmartEnum`2.Value">
+            <summary>
+            Gets the value.
+            </summary>
+            <value>A <typeparamref name="TValue"/> that is the value of the <see cref="T:Ardalis.SmartEnum.SmartEnum`2"/>.</value>
+        </member>
+        <member name="M:Ardalis.SmartEnum.SmartEnum`2.FromName(System.String,System.Boolean)">
+            <summary>
+            Gets the item associated with the specified name.
+            </summary>
+            <param name="name">The name of the item to get.</param>
+            <param name="ignoreCase"><c>true</c> to ignore case during the comparison; otherwise, <c>false</c>.</param>
+            <returns>
+            The item associated with the specified name. 
+            If the specified name is not found, throws a <see cref="T:System.Collections.Generic.KeyNotFoundException"/>.
+            </returns>
+            <exception cref="T:System.ArgumentException"><paramref name="name"/> is <c>null</c>.</exception> 
+            <exception cref="T:Ardalis.SmartEnum.SmartEnumNotFoundException"><paramref name="name"/> does not exist.</exception> 
+            <seealso cref="M:Ardalis.SmartEnum.SmartEnum`2.TryFromName(System.String,`0@)"/>
+            <seealso cref="M:Ardalis.SmartEnum.SmartEnum`2.TryFromName(System.String,System.Boolean,`0@)"/>
+        </member>
+        <member name="M:Ardalis.SmartEnum.SmartEnum`2.TryFromName(System.String,`0@)">
+            <summary>
+            Gets the item associated with the specified name.
+            </summary>
+            <param name="name">The name of the item to get.</param>
+            <param name="result">
+            When this method returns, contains the item associated with the specified name, if the key is found; 
+            otherwise, <c>null</c>. This parameter is passed uninitialized.</param>
+            <returns>
+            <c>true</c> if the <see cref="T:Ardalis.SmartEnum.SmartEnum`2"/> contains an item with the specified name; otherwise, <c>false</c>.
+            </returns>
+            <exception cref="T:System.ArgumentException"><paramref name="name"/> is <c>null</c>.</exception> 
+            <seealso cref="M:Ardalis.SmartEnum.SmartEnum`2.FromName(System.String,System.Boolean)"/>
+            <seealso cref="M:Ardalis.SmartEnum.SmartEnum`2.TryFromName(System.String,System.Boolean,`0@)"/>
+        </member>
+        <member name="M:Ardalis.SmartEnum.SmartEnum`2.TryFromName(System.String,System.Boolean,`0@)">
+            <summary>
+            Gets the item associated with the specified name.
+            </summary>
+            <param name="name">The name of the item to get.</param>
+            <param name="ignoreCase"><c>true</c> to ignore case during the comparison; otherwise, <c>false</c>.</param>
+            <param name="result">
+            When this method returns, contains the item associated with the specified name, if the name is found; 
+            otherwise, <c>null</c>. This parameter is passed uninitialized.</param>
+            <returns>
+            <c>true</c> if the <see cref="T:Ardalis.SmartEnum.SmartEnum`2"/> contains an item with the specified name; otherwise, <c>false</c>.
+            </returns>
+            <exception cref="T:System.ArgumentException"><paramref name="name"/> is <c>null</c>.</exception> 
+            <seealso cref="M:Ardalis.SmartEnum.SmartEnum`2.FromName(System.String,System.Boolean)"/>
+            <seealso cref="M:Ardalis.SmartEnum.SmartEnum`2.TryFromName(System.String,`0@)"/>
+        </member>
+        <member name="M:Ardalis.SmartEnum.SmartEnum`2.FromValue(`1)">
+            <summary>
+            Gets an item associated with the specified value.
+            </summary>
+            <param name="value">The value of the item to get.</param>
+            <returns>
+            The first item found that is associated with the specified value.
+            If the specified value is not found, throws a <see cref="T:System.Collections.Generic.KeyNotFoundException"/>.
+            </returns>
+            <exception cref="T:Ardalis.SmartEnum.SmartEnumNotFoundException"><paramref name="value"/> does not exist.</exception> 
+            <seealso cref="M:Ardalis.SmartEnum.SmartEnum`2.FromValue(`1,`0)"/>
+            <seealso cref="M:Ardalis.SmartEnum.SmartEnum`2.TryFromValue(`1,`0@)"/>
+        </member>
+        <member name="M:Ardalis.SmartEnum.SmartEnum`2.FromValue(`1,`0)">
+            <summary>
+            Gets an item associated with the specified value.
+            </summary>
+            <param name="value">The value of the item to get.</param>
+            <param name="defaultValue">The value to return when item not found.</param>
+            <returns>
+            The first item found that is associated with the specified value.
+            If the specified value is not found, returns <paramref name="defaultValue"/>.
+            </returns>
+            <seealso cref="M:Ardalis.SmartEnum.SmartEnum`2.FromValue(`1)"/>
+            <seealso cref="M:Ardalis.SmartEnum.SmartEnum`2.TryFromValue(`1,`0@)"/>
+        </member>
+        <member name="M:Ardalis.SmartEnum.SmartEnum`2.TryFromValue(`1,`0@)">
+            <summary>
+            Gets an item associated with the specified value.
+            </summary>
+            <param name="value">The value of the item to get.</param>
+            <param name="result">
+            When this method returns, contains the item associated with the specified value, if the value is found; 
+            otherwise, <c>null</c>. This parameter is passed uninitialized.</param>
+            <returns>
+            <c>true</c> if the <see cref="T:Ardalis.SmartEnum.SmartEnum`2"/> contains an item with the specified name; otherwise, <c>false</c>.
+            </returns>
+            <seealso cref="M:Ardalis.SmartEnum.SmartEnum`2.FromValue(`1)"/>
+            <seealso cref="M:Ardalis.SmartEnum.SmartEnum`2.FromValue(`1,`0)"/>
+        </member>
+        <member name="M:Ardalis.SmartEnum.SmartEnum`2.Equals(Ardalis.SmartEnum.SmartEnum{`0,`1})">
+            <summary>
+            Returns a value indicating whether this instance is equal to a specified <see cref="T:Ardalis.SmartEnum.SmartEnum`2"/> value.
+            </summary>
+            <param name="other">An <see cref="T:Ardalis.SmartEnum.SmartEnum`2"/> value to compare to this instance.</param>
+            <returns><c>true</c> if <paramref name="other"/> has the same value as this instance; otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="M:Ardalis.SmartEnum.SmartEnum`2.When(Ardalis.SmartEnum.SmartEnum{`0,`1})">
+            <summary>
+            When this instance is one of the specified <see cref="T:Ardalis.SmartEnum.SmartEnum`2"/> parameters.
+            Execute the action in the subsequent call to Then().
+            </summary>
+            <param name="smartEnumWhen">A collection of <see cref="T:Ardalis.SmartEnum.SmartEnum`2"/> values to compare to this instance.</param>
+            <returns>A executor object to execute a supplied action.</returns>
+        </member>
+        <member name="M:Ardalis.SmartEnum.SmartEnum`2.When(Ardalis.SmartEnum.SmartEnum{`0,`1}[])">
+            <summary>
+            When this instance is one of the specified <see cref="T:Ardalis.SmartEnum.SmartEnum`2"/> parameters.
+            Execute the action in the subsequent call to Then().
+            </summary>
+            <param name="smartEnums">A collection of <see cref="T:Ardalis.SmartEnum.SmartEnum`2"/> values to compare to this instance.</param>
+            <returns>A executor object to execute a supplied action.</returns>
+        </member>
+        <member name="M:Ardalis.SmartEnum.SmartEnum`2.When(System.Collections.Generic.IEnumerable{Ardalis.SmartEnum.SmartEnum{`0,`1}})">
+            <summary>
+            When this instance is one of the specified <see cref="T:Ardalis.SmartEnum.SmartEnum`2"/> parameters.
+            Execute the action in the subsequent call to Then().
+            </summary>
+            <param name="smartEnums">A collection of <see cref="T:Ardalis.SmartEnum.SmartEnum`2"/> values to compare to this instance.</param>
+            <returns>A executor object to execute a supplied action.</returns>
+        </member>
+        <member name="M:Ardalis.SmartEnum.SmartEnum`2.CompareTo(Ardalis.SmartEnum.SmartEnum{`0,`1})">
+            <summary>
+            Compares this instance to a specified <see cref="T:Ardalis.SmartEnum.SmartEnum`2"/> and returns an indication of their relative values.
+            </summary>
+            <param name="other">An <see cref="T:Ardalis.SmartEnum.SmartEnum`2"/> value to compare to this instance.</param>
+            <returns>A signed number indicating the relative values of this instance and <paramref name="other"/>.</returns>
+        </member>
+        <member name="M:Ardalis.SmartEnum.SmartFlagEngine`2.GetFlagEnumValues(`1,System.Collections.Generic.IEnumerable{`0})">
+            <summary>
+            Returns an <see cref="T:System.Collections.Generic.IEnumerable`1"/> representing a given <paramref name="value"/>
+            </summary>
+            <param name="value">The value to retrieve.</param>
+            <param name="allEnumList">an <see cref="T:System.Collections.Generic.IEnumerable`1"/> of <see cref="T:Ardalis.SmartEnum.SmartFlagEnum`1"/> from which to retrieve values.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ardalis.SmartEnum.SmartFlagEngine`2.GetMaxValue">
+            <summary>
+            Gets the largest possible value of the underlying type for the SmartFlagEnum.
+            </summary>
+            <exception cref="T:System.NotSupportedException">If the underlying type <see cref="!:TValue"/>
+            does not define a <c>MaxValue</c> field, this exception is thrown.
+            </exception>
+            <returns>The value of the constant <c>MaxValue</c> field defined by the underlying type <see cref="!:TValue"/>.</returns>
+        </member>
+        <member name="T:Ardalis.SmartEnum.SmartFlagEnum`1">
+            <summary>
+            A base type to use for creating smart enums with inner value of type <see cref="T:System.Int32"/>.
+            </summary>
+            <typeparam name="TEnum">The type that is inheriting from this class</typeparam>.
+            <remarks></remarks>
+        </member>
+        <member name="T:Ardalis.SmartEnum.SmartFlagEnum`2">
+            <summary>
+            A base type to use for creating smart enums.
+            </summary>
+            <typeparam name="TEnum">The type that is inheriting from this class.</typeparam>
+            <typeparam name="TValue">The type of the inner value.</typeparam>
+            <remarks></remarks>
+        </member>
+        <member name="P:Ardalis.SmartEnum.SmartFlagEnum`2.List">
+            <summary>
+            Gets a collection containing all the instances of <see cref="T:Ardalis.SmartEnum.SmartFlagEnum`2"/>.
+            </summary>
+            <value>A <see cref="T:System.Collections.Generic.IReadOnlyCollection`1"/> containing all the instances of <see cref="T:Ardalis.SmartEnum.SmartFlagEnum`2"/>.</value>
+            <remarks>Retrieves all the instances of <see cref="T:Ardalis.SmartEnum.SmartFlagEnum`2"/> referenced by public static read-only fields in the current class or its bases.</remarks>
+        </member>
+        <member name="P:Ardalis.SmartEnum.SmartFlagEnum`2.Name">
+            <summary>
+            Gets the names.
+            </summary>
+            <value>A <see cref="T:System.String"/> that is the names of the <see cref="T:Ardalis.SmartEnum.SmartFlagEnum`2"/>.</value>
+        </member>
+        <member name="P:Ardalis.SmartEnum.SmartFlagEnum`2.Value">
+            <summary>
+            Gets the value.
+            </summary>
+            <value>A <typeparamref names="TValue"/> that is the value of the <see cref="T:Ardalis.SmartEnum.SmartFlagEnum`2"/>.</value>
+        </member>
+        <member name="M:Ardalis.SmartEnum.SmartFlagEnum`2.FromName(System.String,System.Boolean,System.Boolean)">
+            <summary>
+            Gets the items associated with the specified names.
+            </summary>
+            <param name="names">The names of the item/s to get.</param>
+            <param name="ignoreCase"><c>true</c> to ignore case during the comparison; otherwise, <c>false</c>.</param>
+            <returns>
+            The items associated with the specified <param name="names"></param>. 
+            </returns>
+            <exception cref="T:System.ArgumentException"><paramref name="names"/> is <c>null</c>.</exception> 
+            <exception cref="T:Ardalis.SmartEnum.SmartEnumNotFoundException"><paramref name="names"/> does not exist.</exception> 
+            <seealso cref="!:SmartFlagEnum&lt;TEnum, TValue&gt;.TryFromName(string, out TEnum)"/>
+            <seealso cref="!:SmartFlagEnum&lt;TEnum, TValue&gt;.TryFromName(string, bool, out TEnum)"/>
+        </member>
+        <member name="M:Ardalis.SmartEnum.SmartFlagEnum`2.TryFromName(System.String,System.Collections.Generic.IEnumerable{`0}@)">
+            <summary>
+            Gets the items associated with the specified <paramref name="names"/>.
+            </summary>
+            <param name="names">The names of the item/s to get.</param>
+            <param name="result">
+            When this method returns, contains the item associated with the specified names, if the key is found; 
+            otherwise, <c>null</c>. This parameter is passed uninitialized.</param>
+            <returns>
+            <c>true</c> if the <see cref="T:Ardalis.SmartEnum.SmartFlagEnum`2"/> contains an item with the specified names; otherwise, <c>false</c>.
+            </returns>
+            <exception cref="T:System.ArgumentException"><paramref names="names"/> is <c>null</c>.</exception> 
+            <seealso cref="!:SmartFlagEnum&lt;TEnum, TValue&gt;.FromName(string, bool)"/>
+            <seealso cref="!:SmartFlagEnum&lt;TEnum, TValue&gt;.TryFromName(string, bool, out TEnum)"/>
+        </member>
+        <member name="M:Ardalis.SmartEnum.SmartFlagEnum`2.TryFromName(System.String,System.Boolean,System.Collections.Generic.IEnumerable{`0}@)">
+            <summary>
+            Gets the items associated with the specified <paramref name="names"/>.
+            </summary>
+            <param name="names">The names of the item/s to get.</param>
+            <param name="ignoreCase"><c>true</c> to ignore case during the comparison; otherwise, <c>false</c>.</param>
+            <param name="result">
+            When this method returns, contains the items associated with the specified names, if any names are found; 
+            otherwise, <c>null</c>. This parameter is passed uninitialized.</param>
+            <returns>
+            <c>true</c> if the <see cref="T:Ardalis.SmartEnum.SmartFlagEnum`2"/> contains an item with the specified names; otherwise, <c>false</c>.
+            </returns>
+            <exception cref="T:System.ArgumentException"><paramref names="names"/> is <c>null</c>.</exception> 
+            <seealso cref="!:SmartFlagEnum&lt;TEnum, TValue&gt;.FromName(string, bool)"/>
+            <seealso cref="!:SmartFlagEnum&lt;TEnum, TValue&gt;.TryFromName(string, out TEnum)"/>
+        </member>
+        <member name="M:Ardalis.SmartEnum.SmartFlagEnum`2.FromValue(`1)">
+            <summary>
+            Gets an <see cref="T:System.Collections.Generic.IEnumerable`1"/> associated with the specified <paramref name="value"/>.
+            </summary>
+            <param name="value">The value of the item/s to get.</param>
+            <returns>
+            An <see cref="T:System.Collections.Generic.IEnumerable`1"/> containing the item/s found.
+            </returns>
+            <exception cref="T:Ardalis.SmartEnum.SmartEnumNotFoundException"><paramref name="value"/> does not exist.</exception> 
+            <seealso cref="!:SmartFlagEnum&lt;TEnum, TValue&gt;.FromValue(TValue, TEnum)"/>
+            <seealso cref="!:SmartFlagEnum&lt;TEnum, TValue&gt;.TryFromValue(TValue, out TEnum)"/>
+        </member>
+        <member name="M:Ardalis.SmartEnum.SmartFlagEnum`2.DeserializeValue(`1)">
+            <summary>
+            Attempts to retrieve a single <see cref="T:Ardalis.SmartEnum.SmartFlagEnum`1"/> by value.  (Bypasses all Flag behaviour)
+            </summary>
+            <exception cref="T:Ardalis.SmartEnum.SmartEnumNotFoundException"><paramref name="value"/> does not exist.</exception> 
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ardalis.SmartEnum.SmartFlagEnum`2.FromValue(`1,System.Collections.Generic.IEnumerable{`0})">
+            <summary>
+            Gets an <see cref="T:System.Collections.Generic.IEnumerable`1"/> associated with the specified <paramref name="value"/>.
+            </summary>
+            <param name="value">The value of the item/s to get.</param>
+            <param name="defaultValue">The value to return when no items found.</param>
+            <returns>
+            An <see cref="T:System.Collections.Generic.IEnumerable`1"/> containing the item/s found.
+            If the specified value is not found, returns <paramref name="defaultValue"/>.
+            </returns>
+            <seealso cref="M:Ardalis.SmartEnum.SmartFlagEnum`2.FromValue(`1)"/>
+            <seealso cref="!:SmartFlagEnum&lt;TEnum, TValue&gt;.TryFromValue(TValue, out TEnum)"/>
+        </member>
+        <member name="M:Ardalis.SmartEnum.SmartFlagEnum`2.TryFromValue(`1,System.Collections.Generic.IEnumerable{`0}@)">
+            <summary>
+            Gets an <see cref="T:System.Collections.Generic.IEnumerable`1"/> associated with the specified <paramref name="value"/>.
+            </summary>
+            <param name="value">The value of the item/s to get.</param>
+            <param name="result">
+            When this method returns, contains the IEnumerable of item/s associated with the specified value, if any value is found; 
+            otherwise, <c>null</c>. This parameter is passed uninitialized.</param>
+            <returns>
+            <c>true</c> if the <see cref="T:Ardalis.SmartEnum.SmartFlagEnum`2"/> contains any items with the specified names; otherwise, <c>false</c>.
+            </returns>
+            <seealso cref="M:Ardalis.SmartEnum.SmartFlagEnum`2.FromValue(`1)"/>
+            <seealso cref="!:SmartFlagEnum&lt;TEnum, TValue&gt;.FromValue(TValue, TEnum)"/>
+        </member>
+        <member name="M:Ardalis.SmartEnum.SmartFlagEnum`2.FromValueToString(`1)">
+            <summary>
+            Returns a <see cref="T:System.String"/> representation of a given <paramref name="value"/> as a series of comma delineated enum names.
+            </summary>
+            <param name="value">The value of the item/s to get.</param>
+            <returns>A comma delineated series of enum names as a <see cref="T:System.String"/></returns>
+        </member>
+        <member name="M:Ardalis.SmartEnum.SmartFlagEnum`2.TryFromValueToString(`1,System.String@)">
+            <summary>
+            Returns a <see cref="T:System.String"/> representation of a given <paramref name="value"/> as a series of comma delineated enum names.
+            </summary>
+            <param name="value">The value of the item/s to get.</param>
+            <param name="result">
+            When this method returns, contains the string representation associated with the specified value, if any value is found; 
+            otherwise, returns null.</param>
+            <returns>A comma delineated series of enum names as a <see cref="T:System.String"/></returns>
+        </member>
+        <member name="M:Ardalis.SmartEnum.SmartFlagEnum`2.Equals(System.Object)">
+            <summary>
+            
+            </summary>
+            <param names="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ardalis.SmartEnum.SmartFlagEnum`2.Equals(Ardalis.SmartEnum.SmartFlagEnum{`0,`1})">
+            <summary>
+            Returns a value indicating whether this instance is equal to a specified <see cref="T:Ardalis.SmartEnum.SmartFlagEnum`2"/> value.
+            </summary>
+            <param name="other">An <see cref="T:Ardalis.SmartEnum.SmartFlagEnum`2"/> value to compare to this instance.</param>
+            <returns><c>true</c> if <paramref name="other"/> has the same value as this instance; otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="M:Ardalis.SmartEnum.SmartFlagEnum`2.When(Ardalis.SmartEnum.SmartFlagEnum{`0,`1})">
+            <summary>
+            When this instance is one of the specified <see cref="T:Ardalis.SmartEnum.SmartFlagEnum`2"/> parameters.
+            Execute the action in the subsequent call to Then().
+            </summary>
+            <param name="smartFlagEnumWhen">A collection of <see cref="T:Ardalis.SmartEnum.SmartFlagEnum`2"/> values to compare to this instance.</param>
+            <returns>A executor object to execute a supplied action.</returns>
+        </member>
+        <member name="M:Ardalis.SmartEnum.SmartFlagEnum`2.When(Ardalis.SmartEnum.SmartFlagEnum{`0,`1}[])">
+            <summary>
+            When this instance is one of the specified <see cref="T:Ardalis.SmartEnum.SmartFlagEnum`2"/> parameters.
+            Execute the action in the subsequent call to Then().
+            </summary>
+            <param name="smartEnums">A collection of <see cref="T:Ardalis.SmartEnum.SmartFlagEnum`2"/> values to compare to this instance.</param>
+            <returns>A executor object to execute a supplied action.</returns>
+        </member>
+        <member name="M:Ardalis.SmartEnum.SmartFlagEnum`2.When(System.Collections.Generic.IEnumerable{Ardalis.SmartEnum.SmartFlagEnum{`0,`1}})">
+            <summary>
+            When this instance is one of the specified <see cref="T:Ardalis.SmartEnum.SmartFlagEnum`2"/> parameters.
+            Execute the action in the subsequent call to Then().
+            </summary>
+            <param name="smartEnums">A collection of <see cref="T:Ardalis.SmartEnum.SmartFlagEnum`2"/> values to compare to this instance.</param>
+            <returns>A executor object to execute a supplied action.</returns>
+        </member>
+        <member name="M:Ardalis.SmartEnum.SmartFlagEnum`2.CompareTo(Ardalis.SmartEnum.SmartFlagEnum{`0,`1})">
+            <summary>
+            Compares this instance to a specified <see cref="T:Ardalis.SmartEnum.SmartFlagEnum`2"/> and returns an indication of their relative values.
+            </summary>
+            <param name="other">An <see cref="T:Ardalis.SmartEnum.SmartFlagEnum`2"/> value to compare to this instance.</param>
+            <returns>A signed number indicating the relative values of this instance and <paramref name="other"/>.</returns>
+        </member>
+        <member name="M:Ardalis.SmartEnum.SmartFlagEnumExtensions.IsSmartFlagEnum(System.Type,System.Type[]@)">
+            <summary>
+            
+            </summary>
+            <param name="type"></param>
+            <param name="genericArguments"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

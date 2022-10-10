@@ -1,0 +1,8 @@
+C:\Users\mauri\VS-2022\Enumeration\Enumeration\bin\Release\Enumeration.exe.config
+C:\Users\mauri\VS-2022\Enumeration\Enumeration\bin\Release\Enumeration.exe
+C:\Users\mauri\VS-2022\Enumeration\Enumeration\bin\Release\Enumeration.pdb
+C:\Users\mauri\VS-2022\Enumeration\Enumeration\obj\Release\Enumeration.csproj.AssemblyReference.cache
+C:\Users\mauri\VS-2022\Enumeration\Enumeration\obj\Release\Enumeration.csproj.SuggestedBindingRedirects.cache
+C:\Users\mauri\VS-2022\Enumeration\Enumeration\obj\Release\Enumeration.csproj.CoreCompileInputs.cache
+C:\Users\mauri\VS-2022\Enumeration\Enumeration\obj\Release\Enumeration.exe
+C:\Users\mauri\VS-2022\Enumeration\Enumeration\obj\Release\Enumeration.pdb
