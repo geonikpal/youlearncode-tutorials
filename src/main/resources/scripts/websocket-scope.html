@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Websocket Scope Test</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.6.1/sockjs.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+    </head>
+    <body></body>
+	<script>
+    let connected = false;
+    let socket = new SockJS('http://localhost:8080/youlearncode');
+    let stompClient = Stomp.over(socket);  
+    stompClient.connect({}, function(frame) {
+        stompClient.subscribe('/topic/messages')
+        stompClient.send("/app/youlearncode", {}, "hello");
+    });
+    window.addEventListener("beforeunload", function(e){
+     stompClient.disconnect();
+    }, false);
+	</script>
+</html>
