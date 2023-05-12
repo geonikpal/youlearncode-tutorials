@@ -1,0 +1,3 @@
+Note that Java is a robust OO programming language.
+Observe que Java é uma linguagem de programação OO robusta.
+Σημείωσε οτι η Java είναι μια ισχύρη αντικειμενοστρεφής γλώσσα προγραμματισμού.

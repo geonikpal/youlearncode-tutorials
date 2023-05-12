@@ -1,0 +1,5 @@
+This is a piece of text added to help you perform all the operations in this article.
+Feel free to use any other resources of your preference. But, do not forget to provide the right location for it.
+The content here has no specific order nor does it have any purpose besides serving as a resource.
+Again, feel free to replace the content of this file as you please, but keep in mind it'll alter the results.
+Now that you are all set up, let's start coding and have some fun with Java.
