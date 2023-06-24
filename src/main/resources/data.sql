@@ -1,0 +1,1 @@
+INSERT INTO car(id, model, brand, horsepower, price) values (1, 'Astra','Opel',120, 20000);
